@@ -435,7 +435,7 @@ class f2nimage:
 			else :
 				calcarray = np.array(map(lambda x: lingray(x, self.z1, self.z2), calcarray))
 			
-			
+			calcarray = calcarray.astype(np.uint8)
 			calcarray.shape = numpyarrayshape
 			bwarray = np.zeros(numpyarrayshape, dtype=np.uint8)
  

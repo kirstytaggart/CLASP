@@ -263,6 +263,7 @@ iter_kernal_sig   %i
         alardfile.flush()
         alardcode = subprocess.Popen([os.path.join(FILEDIR,'Alard/alardsub'),
                                      template,image],stdout=alardfile).wait()
+        print os.path.join(FILEDIR,'Alard/alardsub'),image,template
         try:
             shutil.move('conv.fits', baseimage+'.sub.fits')
         except OSError:
