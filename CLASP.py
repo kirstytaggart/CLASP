@@ -9,7 +9,7 @@ import subprocess
 import threading
 import atexit
 import time
-
+import pyraf
 import tkFileDialog
 from Tkinter import *
 
@@ -688,7 +688,7 @@ class Application(Frame):
                 print "ERROR\tcouldn't find {}".format(argslist[0])
                 return
             else:
-                pipeproc = subprocess.Popen(argslist,stdout=subprocess.PIPE,
+                pipeproc = subprocess.Popen(["python2.7"]+argslist,stdout=subprocess.PIPE,
                                             stderr=subprocess.STDOUT,
                                             stdin=subprocess.PIPE)
 

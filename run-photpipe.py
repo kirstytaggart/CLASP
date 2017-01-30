@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python2.7
 
 #TODO dont close down ds9 inbetween objcoo and starnums if starslist not defined
 #TODO open ds9 silently

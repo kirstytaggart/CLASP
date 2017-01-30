@@ -474,7 +474,7 @@ if __name__ == '__main__':
     h1.setFormatter(f)
     logger.addHandler(h1)
     # handler to write log entries to terminal
-    h2 = logging.StreamHandler(stream=sys.stdout)
+    h2 = logging.StreamHandler(sys.stdout)
     h2.setLevel(logging.DEBUG) if args.debug else h2.setLevel(logging.INFO)
     h2.setFormatter(f)
     logger.addHandler(h2)
